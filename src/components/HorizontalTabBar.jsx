@@ -15,7 +15,14 @@ export default function HorizontalTabBar({ tabs, activeTabId, onSwitchTab, onClo
                         </div>
                     ))}
                 </div>
-                <button onClick={onCreateTab} style={{ WebkitAppRegion: 'no-drag' }} className="ml-2 mb-1 p-2 rounded-full hover:bg-white/10 active:scale-[0.98] text-gray-300 transition-all flex-shrink-0">{ICONS.newTab}</button>
+                <div 
+                    onClick={onCreateTab} 
+                    style={{ WebkitAppRegion: 'no-drag' }} 
+                    className="group flex items-center py-3 px-5 cursor-pointer rounded-t-lg rounded-b-none transition-all duration-200 
+                              hover:bg-white/10 text-gray-300 hover:text-white ml-1 h-[calc(100%+1px)] -mb-px flex items-center"
+                >
+                    <span className="text-lg font-medium">+</span>
+                </div>
             </div>
             <WindowControls />
         </div>

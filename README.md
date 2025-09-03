@@ -1,12 +1,83 @@
-# React + Vite
+# Kavach - Modern Electron Browser
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Kavach is a modern, lightweight web browser built with Electron, React, and Vite. It provides a fast and customizable browsing experience with a clean, intuitive interface.
 
-Currently, two official plugins are available:
+![Kavach Browser](public/vite.svg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- 🚀 Built with Electron for cross-platform compatibility
+- ⚡ Powered by Vite for fast development and building
+- 🎨 Modern UI with React and Tailwind CSS
+- 🌐 Standard browser features including navigation, tabs, and more
+- 🔄 Hot Module Replacement (HMR) for rapid development
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Prerequisites
+
+- Node.js 16.0.0 or higher
+- npm or yarn package manager
+
+## Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/kavach.git
+   cd kavach
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+   This will start both the Vite development server and Electron app.
+
+4. **Build the application**
+   ```bash
+   npm run build
+   # or
+   yarn build
+   ```
+
+## Project Structure
+
+- `main.cjs` - Main Electron process
+- `preload.cjs` - Preload script for Electron
+- `src/` - React application source code
+  - `components/` - Reusable React components
+  - `assets/` - Static assets
+  - `App.jsx` - Main application component
+
+## Development
+
+- **Development Mode**: `npm run dev`
+- **Production Build**: `npm run build`
+- **Preview Production Build**: `npm run preview`
+
+## Technologies Used
+
+- [Electron](https://www.electronjs.org/) - Cross-platform desktop apps
+- [React](https://reactjs.org/) - UI library
+- [Vite](https://vitejs.dev/) - Next Generation Frontend Tooling
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Lucide Icons](https://lucide.dev/) - Beautiful, consistent icons
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Author
+
+👤 **Rakesh Swain**
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
